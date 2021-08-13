@@ -1,25 +1,9 @@
 # EAF Vue Demo
 This repository provides the EAF Vue Demo application for the [Emacs Application Framework](https://github.com/emacs-eaf/emacs-application-framework).
 
-## Project setup
-```
-npm install
-```
+### Load application
 
-### Compiles and hot-reloads for development
+```Elisp
+(add-to-list 'load-path "~/.emacs.d/site-lisp/eaf-vue-demo/")
+(require 'eaf-vue-demo)
 ```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
