@@ -90,6 +90,13 @@
   (interactive)
   (eaf-open "eaf-vue-demo" "vue-demo"))
 
+(defcustom eaf-vue-demo-keybinding
+  '(("<f12>" . "open_devtools"))
+  "The keybinding of EAF Vue demo."
+  :type 'cons)
+
+(add-to-list 'eaf-app-binding-alist '("vue-demo" . eaf-vue-demo-keybinding))
+
 (setq eaf-vue-demo-module-path (concat (file-name-directory load-file-name) "buffer.py"))
 (add-to-list 'eaf-app-module-path-alist '("vue-demo" . eaf-vue-demo-module-path))
 
