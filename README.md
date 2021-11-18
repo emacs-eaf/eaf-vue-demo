@@ -3,7 +3,10 @@ This repository provides the EAF Vue Demo application for the [Emacs Application
 
 ### Load application
 
+[Install EAF](https://github.com/emacs-eaf/emacs-application-framework#install) first, then add below code in your emacs config:
+
 ```Elisp
-(add-to-list 'load-path "~/.emacs.d/site-lisp/eaf-vue-demo/")
+(add-to-list 'load-path "~/.emacs.d/site-lisp/emacs-application-framework/")
+(require 'eaf)
 (require 'eaf-vue-demo)
 ```
